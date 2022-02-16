@@ -1,0 +1,24 @@
+app:
+  name: "app"
+  env: "dev"
+  port: 8008
+
+log:
+  file_name: "go-template.log"
+  max_size: 500
+  max_age: 30
+  max_backup: 7
+
+db:
+  user: "docker"
+  password: "docker"
+  dbname: "docker"
+  host: "127.0.0.1"
+  port: 5432
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  password: "redis"
+  db: 0
+  pool_size: 500
