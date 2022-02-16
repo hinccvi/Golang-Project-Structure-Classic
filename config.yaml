@@ -10,11 +10,11 @@ log:
   max_backup: 7
 
 db:
+  host: "127.0.0.1"
+  port: 5432
   user: "docker"
   password: "docker"
   dbname: "docker"
-  host: "127.0.0.1"
-  port: 5432
 
 redis:
   host: "127.0.0.1"
