@@ -3,10 +3,10 @@ package repository
 import (
 	"hinccvi/go-template/dao/gorm"
 	"hinccvi/go-template/model"
-	"hinccvi/go-template/request"
+	request "hinccvi/go-template/resources/api/v1"
 )
 
-func CreateUser(user request.User) (error, int64) {
+func CreateUser(user request.User) (int64, error) {
 	userModel := model.User{
 		Name:     user.Name,
 		Age:      user.Age,
@@ -14,7 +14,7 @@ func CreateUser(user request.User) (error, int64) {
 	}
 	result := gorm.DB.Create(&userModel)
 
-	return result.Error, result.RowsAffected
+	return result.RowsAffected, result.Error
 }
 
 func GetAllUser() []model.User {

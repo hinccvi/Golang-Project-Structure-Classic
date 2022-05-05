@@ -1,4 +1,4 @@
-package request
+package v1Resource
 
 type User struct {
 	Name     string `binding:"required" json:"name"`
