@@ -2,11 +2,12 @@ package gorm
 
 import (
 	"fmt"
+	"hinccvi/go-template/config"
+	"hinccvi/go-template/log"
+
 	"go.uber.org/zap"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
-	"hinccvi/go-template/config"
-	"hinccvi/go-template/log"
 )
 
 var DB *gorm.DB

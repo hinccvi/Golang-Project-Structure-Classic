@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"hinccvi/go-template/dao/gorm"
+	"hinccvi/go-template/lib/gorm"
 	"hinccvi/go-template/model"
 	request "hinccvi/go-template/resources/api/v1"
 )
